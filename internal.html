@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Damian Cruz - Portfolio (Internal)</title>
+  <style>
+    /* page setup */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* heading class */
+    .site-title {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      background: #ffffff;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    /* outer buffer */
+    .buffer {
+      width: 80%;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    /* container for 3 boxes */
+    .three-box-container {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .info-box {
+      width: 30%;
+      display: inline-block;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 0 5px;
+      vertical-align: top;
+    }
+
+    .about { background: #ffe5e5; }
+    .skills { background: #e5ffe5; }
+    .contact { background: #e5e5ff; }
+
+    /* main content */
+    .content {
+      width: 80%;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    /* links with pseudo-classes (now we CAN do them) */
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    a:visited {
+      color: #663399;
+    }
+    a:hover {
+      color: #cc0000;
+    }
+    a:active {
+      color: #000;
+    }
+    /* comment: link styles above */
+  </style>
+</head>
+<body>
+
+  <!-- heading div -->
+  <div class="site-title">
+    <h1>Portfolio of Damian Cruz</h1>
+    <p>Informatics • UAlbany • Web Projects</p>
+  </div>
+  <!-- comment: heading div above -->
+
+  <!-- buffer with 3 divs -->
+  <div class="buffer">
+    <div class="three-box-container">
+      <div class="info-box about">
+        <h3>About</h3>
+        <p>Student interested in web and cybersecurity.</p>
+      </div>
+      <div class="info-box skills">
+        <h3>Skills</h3>
+        <p>HTML, CSS, Java, SQL.</p>
+      </div>
+      <div class="info-box contact">
+        <h3>Contact</h3>
+        <p>Albany, NY</p>
+      </div>
+    </div>
+  </div>
+  <!-- comment: three horizontally centered divs above -->
+
+  <div class="content">
+    <h2>Education</h2>
+    <p>B.S. Informatics, University at Albany (expected 2026)</p>
+
+    <h2>Experience</h2>
+    <p>Group projects, database assignments, and Java labs.</p>
+
+    <h2>Links to other pages</h2>
+    <p>
+      <a href="inline.html" title="Inline CSS version">Inline page</a> |
+      <a href="index.html" title="External CSS home">External home</a> |
+      <a href="skills.html" title="Skills page">Skills</a> |
+      <a href="contact.html" title="Contact page">Contact</a>
+    </p>
+
+    <p>Email me at <a href="mailto:damian@example.com" title="Email Damian">damian@example.com</a></p>
+    <!-- comment: email link above -->
+  </div>
+
+</body>
+</html>

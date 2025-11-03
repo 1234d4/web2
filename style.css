@@ -1,0 +1,73 @@
+/* general page setup */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* heading class */
+.site-title {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* outer buffer */
+.buffer {
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* container for 3 boxes */
+.three-box-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* box styles */
+.info-box {
+  width: 30%;
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0 5px;
+  vertical-align: top;
+}
+
+/* different colors so we can see layout (you can change to nicer colors) */
+.about { background: #ffe5e5; }
+.skills { background: #e5ffe5; }
+.contact { background: #e5e5ff; }
+
+/* main content div */
+.content {
+  width: 80%;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+/* links with pseudo classes */
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+a:visited {
+  color: #663399;
+}
+a:hover {
+  color: #cc0000;
+}
+a:active {
+  color: #000;
+}
+
+/* comment: link styles above */
