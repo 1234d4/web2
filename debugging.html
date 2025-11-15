@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Debugging Practice</title>
+</head>
+<body>
+
+  <h1>JavaScript Debugging Practice</h1>
+
+  <button onclick="showMessage()">Click me</button>
+  <p id="change">this will change</p>
+
+  <!-- All JS for this debugging page can stay inside script tags -->
+  <script type="text/javascript">
+    // function to run when button is clicked
+    function showMessage() {
+      // create a variable and assign a string
+      var x = "JavaScript is fun.";
+
+      // change the innerHTML of the paragraph 5 times in a row
+      document.getElementById("change").innerHTML = 
+        x + " " + x + " " + x + " " + x + " " + x;
+    }
+  </script>
+
+</body>
+</html>
