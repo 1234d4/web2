@@ -43,7 +43,25 @@
     </p>
 
     <p>Email: <a href="mailto:damian@example.com" title="Email Damian">damian@example.com</a></p>
+
+    <h2>Salary Calculator</h2>
+    <p>Enter an hourly wage and hours per week to estimate a yearly salary.</p>
+
+    <label for="wage">Hourly wage ($): </label>
+    <input type="text" id="wage" name="wage">
+    <br><br>
+
+    <label for="hours">Hours per week: </label>
+    <input type="text" id="hours" name="hours">
+    <br><br>
+
+    <button type="button" onclick="calcSalary()">Calculate salary</button>
+
+    <p id="salary-output">Your yearly salary will appear here.</p>
+
   </div>
+<script src="salary.js"></script>
 
 </body>
 </html>
+
