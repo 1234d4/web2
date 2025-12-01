@@ -19,7 +19,20 @@ function calcSalary() {
   // fifth variable: yearly salary = wage * hours per week * 52
   var yearlySalary = wageNum * hoursNum * 52;
 
-  // show the result
+    // decide if the salary is enough (undefined at first)
+  var salaryMessage;
+
+  if (yearlySalary < 20000) {
+    salaryMessage = ". The salary is too little.";
+  }
+  else if (yearlySalary >= 20000 && yearlySalary < 25000) {
+    salaryMessage = ". The salary is almost enough. Let's negotiate.";
+  }
+  else {
+    salaryMessage = ". This is a great salary for me.";
+  }
+
+  // final message (salary + opinion text)
   document.getElementById("salary-output").innerHTML =
-    "Estimated yearly salary: $" + yearlySalary.toFixed(2);
+    "The salary is $" + yearlySalary.toFixed(2) + salaryMessage;
 }
