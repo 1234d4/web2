@@ -36,3 +36,71 @@ function calcSalary() {
   document.getElementById("salary-output").innerHTML =
     "The salary is $" + yearlySalary.toFixed(2) + salaryMessage;
 }
+
+// Function for Job 1 duties
+function showJob1Duties() {
+  var countString = document.getElementById("job1-count").value;
+  var count = parseInt(countString);
+
+  if (isNaN(count) || count <= 0) {
+    document.getElementById("job1-output").innerHTML =
+      "Please enter a positive number.";
+    return;
+  }
+
+  var duties1 = [
+    "Greeted customers and took orders.",
+    "Delivered food and drinks quickly.",
+    "Handled payments and balanced the register.",
+    "Kept tables clean and organized.",
+    "Communicated with kitchen staff about orders."
+  ];
+
+  if (count > duties1.length) {
+    count = duties1.length;
+  }
+
+  var index = count - 1;
+  var outputText = "";
+
+  while (index >= 0) {
+    outputText = outputText + "- " + duties1[index] + "<br>";
+    index = index - 1;
+  }
+
+  document.getElementById("job1-output").innerHTML = outputText;
+}
+
+// Function for Job 2 duties
+function showJob2Duties() {
+  var countString = document.getElementById("job2-count").value;
+  var count = parseInt(countString);
+
+  if (isNaN(count) || count <= 0) {
+    document.getElementById("job2-output").innerHTML =
+      "Please enter a positive number.";
+    return;
+  }
+
+  var duties2 = [
+    "Helped users with computer and login problems.",
+    "Installed software and system updates.",
+    "Troubleshot network and WiFi issues.",
+    "Documented support tickets and solutions.",
+    "Set up new devices and accounts."
+  ];
+
+  if (count > duties2.length) {
+    count = duties2.length;
+  }
+
+  var index = count - 1;
+  var outputText = "";
+
+  while (index >= 0) {
+    outputText = outputText + "- " + duties2[index] + "<br>";
+    index = index - 1;
+  }
+
+  document.getElementById("job2-output").innerHTML = outputText;
+}
